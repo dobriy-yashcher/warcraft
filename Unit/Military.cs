@@ -20,6 +20,6 @@ namespace Unit
             this.armor = armor;
         }
 
-        public abstract void Attack();
+        public abstract void Attack(Unit unt);
     }
 }

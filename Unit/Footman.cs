@@ -12,9 +12,15 @@ namespace Unit
                        double damage, double attackSpeed, double armor)
                        : base(health, cost, name, speed, damage, attackSpeed, armor) { }
 
-        public override void Attack()
+        public override void Attack(Unit unt)
         {
+            unt.health -= damage;
 
+            if (unt.health <= 0)
+            {
+                unt.isDestroyed = true;
+                unt.health = 0;
+            }
         }
 
         public void Berserker()

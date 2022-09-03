@@ -11,6 +11,19 @@ namespace Warcraft
             var mage = new Mage(50, 15, "mage", 2, 50, 2, 10, 7, 80);
             var guardTower = new GuardTower(450, 50, "guardTower", 5, 50, 1);
             var dragon = new Dragon(1000, 150, "dragon", 5.5, 100, 3, 0, 8, 500);
+
+            Console.WriteLine(guardTower.health);
+            guardTower.Attack(guardTower);
+            Console.WriteLine(guardTower.health);
+
+            Console.WriteLine(dragon.health);
+            guardTower.Attack(dragon);
+            Console.WriteLine(dragon.health);
+
+            Console.WriteLine(mage.health);
+            guardTower.Attack(mage);
+            Console.WriteLine(mage.health);
+            if (mage.isDestroyed) { Console.WriteLine("die"); }
         }
     }
 }

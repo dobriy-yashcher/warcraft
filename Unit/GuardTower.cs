@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Unit
+﻿namespace Unit
 {
     public class GuardTower : Unit
     {
@@ -24,8 +18,10 @@ namespace Unit
             unt.health -= damage;
 
             if (unt.health <= 0)
+            {
                 unt.isDestroyed = true;
                 unt.health = 0;
+            }
         }
     }
 }
