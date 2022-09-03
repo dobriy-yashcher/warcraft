@@ -13,7 +13,7 @@
             this.attackSpeed = attackSpeed;
         }
 
-        public void Attack(Unit unt) 
+        public override void Attack(Unit unt) 
         {
             unt.health -= damage;
 

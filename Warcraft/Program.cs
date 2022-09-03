@@ -12,18 +12,40 @@ namespace Warcraft
             var guardTower = new GuardTower(450, 50, "guardTower", 5, 50, 1);
             var dragon = new Dragon(1000, 150, "dragon", 5.5, 100, 3, 0, 8, 500);
 
-            Console.WriteLine(guardTower.health);
-            guardTower.Attack(guardTower);
-            Console.WriteLine(guardTower.health);
+            {
+                Console.WriteLine(guardTower.health);
+                guardTower.Attack(guardTower);
+                Console.WriteLine(guardTower.health);
 
-            Console.WriteLine(dragon.health);
-            guardTower.Attack(dragon);
-            Console.WriteLine(dragon.health);
+                Console.WriteLine(dragon.health);
+                guardTower.Attack(dragon);
+                Console.WriteLine(dragon.health);
 
-            Console.WriteLine(mage.health);
-            guardTower.Attack(mage);
-            Console.WriteLine(mage.health);
-            if (mage.isDestroyed) { Console.WriteLine("die"); }
+                Console.WriteLine(mage.health);
+                guardTower.Attack(mage);
+                Console.WriteLine(mage.health);
+                if (mage.isDestroyed) { Console.WriteLine("die"); }
+            }
+
+
+            {
+                var units = new List<Unit.Unit> {peasant, footman, mage, guardTower, dragon};
+
+                while (units.Count > 1)
+                {
+                    Random random = new Random();
+
+                    var unit1 = random.Next(0, 5);
+                    var unit2 = random.Next(0, 5);
+
+                    units[unit1].Attack(units[unit2]);
+
+                    if (units[unit2].isDestroyed)
+                    {
+                        //units[unit2].
+                    }
+                }
+            }
         }
     }
 }

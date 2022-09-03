@@ -19,5 +19,8 @@ namespace Unit
 
         public override void Move()
         { }
+
+        public override void Attack(Unit unt)
+        { }
     }
 }

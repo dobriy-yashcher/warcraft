@@ -19,7 +19,5 @@ namespace Unit
             this.attackSpeed = attackSpeed;
             this.armor = armor;
         }
-
-        public abstract void Attack(Unit unt);
     }
 }

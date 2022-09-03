@@ -23,7 +23,7 @@ namespace Unit
             }
         }
 
-        public void FireBreath() { Console.WriteLine("boom"); }
+        public void FireBreath() { }
 
         public override void Move() { }
     }

@@ -23,5 +23,7 @@ namespace Unit
             this.lvl = lvl;
             isDestroyed = false;
         }
+
+        public abstract void Attack(Unit unt);
     }
 }
