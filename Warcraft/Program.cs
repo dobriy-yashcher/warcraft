@@ -11,6 +11,8 @@ namespace Warcraft
             var mage = new Mage(50, 15, "mage", 2, 50, 2, 10, 7, 80);
             var guardTower = new GuardTower(450, 50, "guardTower", 5, 50, 1);
             var dragon = new Dragon(1000, 150, "dragon", 5.5, 100, 3, 0, 8, 500);
+
+
         }
     }
 }
