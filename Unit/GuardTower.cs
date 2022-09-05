@@ -1,4 +1,6 @@
-﻿namespace Unit
+﻿// Turushkin Sergey, 320P, "Warcraft"
+
+namespace Unit
 {
     public class GuardTower : Unit
     {

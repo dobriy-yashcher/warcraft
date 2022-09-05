@@ -1,4 +1,6 @@
-﻿using Unit;
+﻿// Turushkin Sergey, 320P, "Warcraft"
+
+using Unit;
 
 namespace Warcraft
 {
